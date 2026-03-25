@@ -2,17 +2,21 @@
 
 **Author: Chiayu Peng**
 
+
 #### Executive Summary
 
 This project develops a supervised classification machine learning model to predict depression in studnets using data such as demographics, academic indicators, lifestyle, and other factors. The goal is to minimize missed depression cases (false negatives) by optimizing for recall score, ensuring at-risk students are identified and referred to mental wellnes institutes or practioners for early interventions, while identifying the top 5 drivers impacting a student's emotional wellbeing. 
 
 A KNN model is chosen as the final model for deployment because it achieves the highest recall score (0.9227).
 
+
 #### Rationale
 It is important to be able to identify students who may require intervention for their emotional wellbeing. If the question is left unanswered, students who are emotionally unwell may suffer in silence without anyone ever noticing it. With a predictive model capable of identifying potentially emotionally unwell students, emotional and mental wellness institutions can gain insight on factors contributing to depress among students, and the predictive model can flag potentially depressed students to introduce early interventions.
 
+
 #### Research Question
 What are the top factors contributing to a student's mental wellness?
+
 
 #### Data Source
 The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/adilshamim8/student-depress-dataset/data), titled "Student depress Dataset". The dataset has 18 columns and total of 27901 rows, which is adequate for data analysis. Based on the Kaggle website, the data was compiled through multiple datasets from OpenML.org, and senstitive information was removed or encoded to achieve anonymity. The dataset is adequate for reasearch purposes.
@@ -38,6 +42,7 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 - **Family History of Mental Illness**: Indicates whether there is a family history of mental illness (Yes/No), which can be a significant factor in mental health predispositions.
 - **Depression**: The target variable that indicates whether the student is experiencing depress (Yes/No = 0/1). This is the primary focus of the analysis. 
 
+
 #### Methodology
 
 1. Exploratory Data Analysis
@@ -50,6 +55,7 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 8. Model Evaluation - Recall Score
 9. Model Interpreation and Explainability - SHAP Values
 10. Model Validation and Testing
+
 
 #### Results from Best Performing Models
 
@@ -65,6 +71,7 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 - **Validation recall**: 0.9227 — 92.3% of depressed patients correctly identified
 - **Generalization gap**: 0.3% — model generalizes well to unseen data
 
+
 #### Business Impact
 
 - **92.3% of depressed students** are correctly identified
@@ -72,6 +79,7 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 - Compared to baseline (Logistic Regression recall = 0.888):
   - KNN catches **3.47% more** depressed patients
   - At 27,000 patients this means ~936 additional cases identified
+
 
 #### Limitations
 
@@ -84,6 +92,15 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 
 #### Model Monitoring and Maintenance
 
+To monitor this model in production once the model is launched:
+- Implement data drift detection
+- Data should recollected regularly (e.g. annually) to check if there are changes in feature distributions or target distribution, for example, when depression become more prevelant
+- The performance of the model should be tracked with regularly updated data to ensure its recall score is not compromised
+
+- Use MLflow and DVC to track experiements and model versions when the model is updated
+- Track recall scores over time with updated data and model to detect model decay
+- The model should be re-trained when recall drops below 0.90
+
 
 #### Future Improvement and Next Steps
 
@@ -94,9 +111,11 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 - Instead of binary values (1/0) for `Depressoin`, consider using a scale to focus on those who are the most depressed
 - The dataset was collected within India. Consider a global survey to expand samples beyond students in India
 
+
 #### Outline of Project
 
 - [Link to notebook](https://github.com/chiayu-peng/capstone/blob/main/capstone_chiayupeng.ipynb)
+
 
 **Repository Structure**
 
@@ -104,6 +123,7 @@ The data is sourced from the Kaggle [website](https://www.kaggle.com/datasets/ad
 │   ├── student_depression_dataset.csv   # original dataset
 ├── capstone_chiayupeng.ipynb            # jupyter notebook
 └── README.md
+
 
 ##### Contact and Further Information
 Email: cpeng26@gmail.com
