@@ -95,7 +95,7 @@ To monitor this model in production once the model is launched:
   - Track recall scores over time with updated data and model to detect model decay
   - The model should be re-trained when recall drops below 0.90
 
-## Iteration and Improvement
+## Next Steps and Recommendations
 
 **Data Collection**
 - Proper data collection on student degree, to highlight which majors may be more likley to contribute to student depression
