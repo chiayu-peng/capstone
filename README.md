@@ -143,20 +143,21 @@ To monitor this model in production once the model is launched:
 
 **Further Reading on Student Depression**
 
-Research & Statistics
+- Research & Statistics
   - [Healthy Minds Study 2024–2025](https://sph.umich.edu/news/2025posts/college-student-mental-health-third-consecutive-year-improvement.html)
   - [Scoping Review: Determinants of Depression in College Students](https://pmc.ncbi.nlm.nih.gov/articles/PMC12385297/)
   - [Life Stressors and Depression in University Students](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1558407/full)
   - [Prevalence of Depressive Tendencies Post-Pandemic](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2024.1326582/full)
 
 
-Policy & Intervention
+- Policy & Intervention
   - [Strengthening Mental Health Among University Students](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1689173/full)
   - [State Policymakers Toolkit — College Student Mental Health](https://www.acenet.edu/documents/Student-Mental-Health-State-Toolkit.pdf)
 
-Global Context
+- Global Context
   - [WHO Depression Fact Sheet](https://www.who.int/news-room/fact-sheets/detail/depression)
 
-Disclaimer
-- This model is intended for research and educational purposes only. It should NOT be used as a standalone clinical diagnostic tool.
+**Disclaimer**
+
+This model is intended for research and educational purposes only. It should NOT be used as a standalone clinical diagnostic tool.
 
