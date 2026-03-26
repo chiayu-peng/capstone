@@ -126,7 +126,6 @@ To monitor this model in production once the model is launched:
 ## Outline of Project
 
   - [Link to Notebook](https://github.com/chiayu-peng/capstone/blob/main/capstone_chiayupeng.ipynb)
-  - [Link to Repository](https://github.com/chiayu-peng/capstone/)
   - Repository Structure
 ```
 ├── data/
