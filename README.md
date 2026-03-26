@@ -6,7 +6,7 @@
 
 In this notebook, a supervised machine learning model (KNN) was developed to predict depression among students, using a real-world dataset of 27k samples from students in India. Recall score was chosen as the evaluation metrics, to ensure that at-risk students are identified by minimizing missed depression cases (false negatives). Five classifiers were evaluated — Logistic Regression, KNN, Random Forest, SVM and XGBoost through five rounds of hyperparameter tuning.
 
-Finally. the KNN model was chosen as the best model for achieving the highest validation recall score of 0.9227 with strong generalization to missing data. Using a SHAP KernelExplainer, the top drivers of student depression were identified — whether one has had suicidal thoughts, academic pressure, and financial stress.
+Finally. the KNN model was chosen as the best model for achieving the highest validation recall score of 0.9227 with strong generalization. Using a SHAP KernelExplainer, the top three drivers of student depression were identified — whether one has had suicidal thoughts, academic pressure, and financial stress.
 
 The notebook demonstrates that machine learning can effectively support depression screening in student populations, achieving a validation recall of 92.2% with strong generalization to unseen data. The results can be used by mental health institutions or practitioners to flag potentially depressed students for early interventions, and the identified top drivers of student depresion are beneficial to universtiy administration and mental health policy makers.
 
